@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skyroot Aerospace LLC</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #f5f6f8;
+  color: #333;
+}
+
+/* NAVBAR */
+nav {
+  background: #ffffff;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+}
+
+nav h1 {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  color: #1a2a4f;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+/* HERO */
+.hero {
+  background: #e9eef5;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #555;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: #1a2a4f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* SERVICES */
+.services {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.services h3 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.card h4 {
+  margin-bottom: 10px;
+  color: #1a2a4f;
+}
+
+/* ABOUT */
+.about {
+  background: #ffffff;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+/* CONTACT */
+.contact {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+input, textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* FOOTER */
+footer {
+  background: #1a2a4f;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h1>Skyroot Aerospace LLC</h1>
+  <div>
+    <a href="#">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <h2>Professional Aircraft Maintenance & Repair</h2>
+  <p>Dependable aviation services built on precision, safety, and experience</p>
+  <button class="btn">Request Service</button>
+</section>
+
+<section class="services" id="services">
+  <h3>Our Services</h3>
+  <div class="grid">
+    <div class="card">
+      <h4>Maintenance</h4>
+      <p>Routine aircraft servicing and inspections.</p>
+    </div>
+    <div class="card">
+      <h4>Engine Repair</h4>
+      <p>Complete diagnostics and overhaul solutions.</p>
+    </div>
+    <div class="card">
+      <h4>Avionics</h4>
+      <p>Upgrades and modern system installations.</p>
+    </div>
+    <div class="card">
+      <h4>Emergency Service</h4>
+      <p>Fast-response repair support when you need it most.</p>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h3>About Skyroot Aerospace LLC</h3>
+  <p>
+    We specialize in aircraft repair and maintenance services with a strong
+    commitment to safety, reliability, and operational excellence. Our
+    experienced technicians ensure every aircraft meets the highest
+    industry standards.
+  </p>
+</section>
+
+<section class="contact" id="contact">
+  <h3>Request Service</h3>
+  <form onsubmit="submitForm(event)">
+    <input type="text" placeholder="Full Name" required><br>
+    <input type="email" placeholder="Email Address" required><br>
+    <textarea rows="5" placeholder="Service Details"></textarea><br>
+    <button class="btn">Submit</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 Skyroot Aerospace LLC
+</footer>
+
+<script>
+function submitForm(e) {
+  e.preventDefault();
+  alert("Request submitted successfully.");
+}
+</script>
+
+</body>
+</html>
